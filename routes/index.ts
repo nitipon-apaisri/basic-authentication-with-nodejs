@@ -1,5 +1,5 @@
 import { Router } from "express";
-import { getHelloworldController } from "../controllers/exempleController";
+import { registerController } from "../controllers/userController";
 const router = Router();
-router.get("/helloworld", getHelloworldController);
+router.post("/register", registerController);
 export default router;
